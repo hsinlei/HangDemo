@@ -14,6 +14,7 @@
 		3787D13E2BD45D72003DE7AF /* HangDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787D13D2BD45D72003DE7AF /* HangDemoTests.swift */; };
 		3787D1482BD45D72003DE7AF /* HangDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787D1472BD45D72003DE7AF /* HangDemoUITests.swift */; };
 		3787D14A2BD45D72003DE7AF /* HangDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787D1492BD45D72003DE7AF /* HangDemoUITestsLaunchTests.swift */; };
+		3787D1582BD45DCF003DE7AF /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3787D1572BD45DCF003DE7AF /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3787D1582BD45DCF003DE7AF /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = HangDemo;
+			packageProductDependencies = (
+				3787D1572BD45DCF003DE7AF /* MarkdownUI */,
+			);
 			productName = HangDemo;
 			productReference = 3787D1292BD45D71003DE7AF /* HangDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 3787D1202BD45D71003DE7AF;
+			packageReferences = (
+				3787D1562BD45DCF003DE7AF /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			productRefGroup = 3787D12A2BD45D71003DE7AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3787D1562BD45DCF003DE7AF /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3787D1572BD45DCF003DE7AF /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3787D1562BD45DCF003DE7AF /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3787D1212BD45D71003DE7AF /* Project object */;
 }
